@@ -1,7 +1,8 @@
 Projeto LunarLander-v2 com Q-Learning
 
 
-Descrição
+Descrição:
+
 Este projeto implementa um agente de aprendizado por reforço usando Q-Learning para resolver o ambiente LunarLander-v2 do Gymnasium (anteriormente OpenAI Gym). O objetivo é treinar um agente para pousar com sucesso um módulo lunar em uma plataforma designada.
 
 Estrutura do Projeto

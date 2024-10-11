@@ -8,7 +8,7 @@ LunarLander-v2_treinamento.py - Script para treinar o agente
 LunarLander-v2_Inteligente.py - Script para visualizar o agente treinado em ação
 q_table_lunarlander.pkl - Arquivo de pesos do modelo treinado (disponível via Google Drive)
 
-Arquivo de Pesos
+Arquivo de Pesos:
 Devido ao tamanho do arquivo de pesos, ele está hospedado externamente:
 Download q_table_lunarlander.pkl https://drive.google.com/file/d/1zhUcjNjyPrnOJcoifCD1eVebd0GcpZJm/view?usp=sharing
 

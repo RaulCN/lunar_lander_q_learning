@@ -17,7 +17,7 @@ gymnasium
 numpy
 pickle
 
-Como Usar
+Como Usar:
 1. Configuração
 
 Clone o repositório
@@ -42,7 +42,7 @@ Exploração: Decaiimento de 1.0 a 0.01 com fator de 0.995
 
 Obs: Esse foi o último algorítimo utilizado, utilizei vários outros que não estão upados no projeto, então não tenho absoluta certeza da correlação do treinamento com a calibragem dos pesos na saída do treinamento.
 
-Discretização do Estado
+Discretização do Estado:
 O ambiente contínuo é discretizado em 20 bins para cada uma das 8 dimensões do estado:
 
 Posição horizontal (-1 a 1)
@@ -56,7 +56,7 @@ Contato da perna direita (-1 a 1)
 
 Como Funciona:
 
-Treinamento
+Treinamento:
 O agente utiliza Q-Learning, um algoritmo de aprendizado por reforço que cria uma tabela (Q-table) para aprender quais ações são melhores em cada estado. Como o LunarLander tem um espaço de estados contínuo, implementamos a discretização desse espaço em 20 bins para cada dimensão, tornando possível usar a tabela Q. Durante o treinamento, a política ε-greedy é usada para balancear exploração (tentar novas ações) e aproveitamento (usar o conhecimento já adquirido): inicialmente, o agente explora mais (ε = 1.0) e gradualmente passa a aproveitar mais o conhecimento adquirido (ε decai até 0.01). A tabela Q é atualizada constantemente usando a fórmula de Bellman, que considera a recompensa imediata e futuras recompensas potenciais. O ambiente fornece recompensas positivas para pousos bem-sucedidos e negativas para colisões entre outros movimentos indesejáveis, permitindo que o agente aprenda progressivamente a melhor estratégia para pousar o módulo lunar com segurança.
 
 Execução:
@@ -117,7 +117,7 @@ Desenvolver métricas mais sofisticadas para avaliar o desempenho
 
 Estas melhorias poderiam resultar em um sistema mais eficiente, com melhor desempenho e uso mais otimizado de recursos computacionais. A implementação de algoritmos mais inteligentes e adaptativos, combinada com técnicas de otimização de dados, pode levar a um agente mais capaz e eficiente.
 
-Contribuindo
+Contribuindo:
 Sinta-se à vontade para fazer fork do projeto e submeter pull requests com melhorias.
 
 Obs: esse experimento não tem uma metodologia de testes de desempenho e análise da evolução dos algorítimos, é apenas um exercício de implementação de conceitos de aprendizado por reforço.
